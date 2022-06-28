@@ -1,117 +1,135 @@
 @font-face {
-    font-family: 'Eulyoo1945-SemiBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-SemiBold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Eulyoo1945-SemiBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-SemiBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'EarlyFontDiary';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "EarlyFontDiary";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
-body{
-    font-family: 'EarlyFontDiary';
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    padding: 2rem;
-    background-color: white;
+body {
+  font-family: "EarlyFontDiary";
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 2rem;
+  background-color: white;
 
-
-    @media (max-width: 768px) {
-        margin-top: 1rem;
-        width: calc(100% - 2rem);
-        
-    }
-
+  @media (max-width: 768px) {
+    margin-top: 1rem;
+    width: calc(100% - 2rem);
+  }
 }
 
-.todo-list{
-    border: 2px solid red;
-    padding-left: 20px;
-    padding-top: 0;
+.todo-list {
+  border: 2px solid red;
+  padding-left: 20px;
+  padding-top: 0;
+  padding-bottom: 20px;
 }
-h1{
-    font-family: 'Eulyoo1945-SemiBold';
-    text-align: left;
-    font-size: 4rem;
-    font-weight: 300;
-    margin: 0;
+h1 {
+  font-family: "Eulyoo1945-SemiBold";
+  text-align: left;
+  font-size: 4rem;
+  font-weight: 300;
+  margin: 0;
+  color: red;
+  border-bottom: 1px solid red;
+  padding-top: 10px;
+  /* padding-bottom: 15px; */
+  margin-right: 15px;
+}
+.todo-input {
+  font-family: "EarlyFontDiary";
+
+  flex: 1;
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid red;
+  border-top: 1px solid red;
+  color: rgb(5, 5, 136);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 2rem;
+  width: 20rem;
+}
+
+.todo-input-btn {
+  font-family: "EarlyFontDiary";
+
+  width: 5rem;
+  height: 2rem;
+  margin-left: 1rem;
+  border: 1px solid red;
+  color: red;
+  font-weight: 500;
+  font-size: 1.1rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.todo-input-btn:hover {
+  background-color: rgb(243, 235, 235);
+  color: darkred;
+}
+
+.todo-input-btn:active {
+  background-color: crimson;
+  color: white;
+}
+
+.todo-delete-btn {
+  font-family: "EarlyFontDiary";
+
+  margin-left: 1rem;
+  color: red;
+  font-size: 0.8rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.todo-delete-btn:hover {
+  color: darkred;
+  text-decoration: underline;
+}
+
+.todo-list-list {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  padding-left: 1.5rem;
+  margin-bottom: 10px;
+  /* display: flex; */
+  /* background-color: green; */
+}
+
+.todo-checkbox {
+  width: 20px;
+  cursor: pointer;
+}
+.todo-count{
+    font-size: 13px;
+    /* position: right; */
+    text-align: right;
+    margin-right: 30px;
     color: red;
-    border-bottom: 1px solid red;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    margin-right: 15px;
+    margin-top: 8px;
 }
-.todo-input{
-    font-family: 'EarlyFontDiary';
-
-    flex: 1;
-    font-size: 1.1rem;
-    outline: none;
-    border: none;
-    background: transparent;
-    border-bottom: 1px solid red;
-    border-top: 1px solid red;
-    color: rgb(5, 5, 136);
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-    height: 2rem;
-    width: 20rem;
+.todo-date{
+    text-align: right;
+    margin-right: 20px;
+    font-size: 15px;
 
 }
-
-.todo-input-btn{
-    font-family: 'EarlyFontDiary';
-
-    width: 5rem;
-    height: 2rem;
-    margin-left: 1rem;
-    border: 1px solid red;
-    color: red;
-    font-weight: 500;
-    font-size: 1.1rem;
-    align-items: center;
-    justify-content: center; 
-    cursor: pointer;
-}
-
-.todo-input-btn:hover{
-    background-color: rgb(243, 235, 235);
-    color: darkred;
-}
-
-.todo-input-btn:active{
-    background-color: crimson;
-    color: white;
-}
-
-.todo-delete-btn{
-    font-family: 'EarlyFontDiary';
-
-    margin-left: 1rem;
-    color: red;
-    font-size: 0.8rem;
-    cursor: pointer;
-    background: none;
-    border: none;
-}
-
-.todo-delete-btn:hover{
-    color: darkred;
-    text-decoration: underline;
-}
-
-.todo-list-list{
-    font-size: 1.2rem;
-    margin-top : 5px;
-    padding-left: 1.5rem;
-    margin-bottom: 10px;
-
-}
-
